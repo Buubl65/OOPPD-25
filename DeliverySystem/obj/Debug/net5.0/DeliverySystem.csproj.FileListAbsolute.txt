@@ -1,0 +1,15 @@
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.exe
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.deps.json
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.runtimeconfig.json
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.runtimeconfig.dev.json
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.dll
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\ref\DeliverySystem.dll
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\bin\Debug\net5.0\DeliverySystem.pdb
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.AssemblyInfoInputs.cache
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.AssemblyInfo.cs
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.csproj.CoreCompileInputs.cache
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.dll
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\ref\DeliverySystem.dll
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.pdb
+C:\Users\stud_centr\source\repos\Temp\DeliverySystem\DeliverySystem\obj\Debug\net5.0\DeliverySystem.genruntimeconfig.cache
