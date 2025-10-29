@@ -1,0 +1,11 @@
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.exe
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.deps.json
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.runtimeconfig.json
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.runtimeconfig.dev.json
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.dll
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\bin\Debug\netcoreapp3.1\SmartHomeSystem.pdb
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\obj\Debug\netcoreapp3.1\SmartHomeSystem.csprojAssemblyReference.cache
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\obj\Debug\netcoreapp3.1\SmartHomeSystem.AssemblyInfoInputs.cache
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\obj\Debug\netcoreapp3.1\SmartHomeSystem.AssemblyInfo.cs
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\obj\Debug\netcoreapp3.1\SmartHomeSystem.dll
+C:\Users\326\source\repos\Temp\SmartHome\SmartHomeSystem\obj\Debug\netcoreapp3.1\SmartHomeSystem.pdb
