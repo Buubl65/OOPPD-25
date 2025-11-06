@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
     public class SmartHomeController
     {
-        List<ISwitchable> switchableDevise = new List<ISwitchable>();
-        List<IEnergyConsumer> energyDevise = new List<IEnergyConsumer>();
+        List<ISwitchable> switchables = new List<ISwitchable>();
+        List<IEnergyConsumer> energyConsumer = new List<IEnergyConsumer>();
 
         public void AddDevice(ISwitchable device)
         {
-            switchableDevise.Add(device);
+            switchables.Add(device);
         }
 
         public void AddEnergyDevice(IEnergyConsumer device)
         {
-            energyDevise.Add(device);
+            energyConsumer.Add(device);
         }
 
         public void TurnAllOn()
         {
-            foreach(var device in switchableDevise)
+            foreach(var device  in switchables)
             {
                 device.TurnOn();
             }
@@ -29,7 +31,7 @@ namespace SmartHomeSystem
 
         public void TurnAllOff()
         {
-            foreach(var device in switchableDevise)
+            foreach(var device in switchables)
             {
                 device.TurnOff();
             }
@@ -40,15 +42,17 @@ namespace SmartHomeSystem
             Console.WriteLine($"Звіт про споживання енергії за {hours} год:");
 
             double TotalEnergy = 0;
-            foreach (var device in energyDevise)
+
+            foreach (var device in energyConsumer)
             {
                 double energy = device.GetEnergyUsage(hours);
                 TotalEnergy += energy;
 
-                Console.WriteLine($"{device.DeviceName}: {energy:F2} кВт год (потужність: {device.PowerConsumption} Вт)");
+                Console.WriteLine($"{device.DeviceName}: {energy:F2} кВт·год (потужність: {device.PowerConsumption} Вт)");
             }
-            Console.WriteLine($"Загальне споживання: {TotalEnergy:F2} кВт год");
-            Console.WriteLine($"Вартість (~ 4 грн/кВт год): {TotalEnergy * 4:F2} грн");
+            Console.WriteLine($"Загальне споживання: {TotalEnergy:F2} кВт·год");
+
+            Console.WriteLine($"Вартість (~4 грн/кВт·год): {TotalEnergy * 4:F2} грн");
         }
     }
 }

@@ -1,38 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
-    class CoffeeMachine : Device, IEnergyConsumer
+    public class CoffeeMachine : Device, IEnergyConsumer
     {
-        public const int Power = 1000;
+        public int Power = 1000;
 
         public CoffeeMachine(string name) : base(name) { }
 
         public string DeviceName => Name;
+
         public int PowerConsumption => Power;
 
         public override void TurnOn()
         {
-            IsOn = true;
-            Console.WriteLine($"{Name} почав готувати каву");
+            Console.WriteLine($"{Name} почала готувати каву.");
         }
 
         public override void TurnOff()
         {
-            IsOn = false;
-            Console.WriteLine($"{Name} завершила роботу");
+            Console.WriteLine($"{Name} завершила роботу.");
         }
 
-        public double GetEnergyUsage(int hourse)
+        public double GetEnergyUsage(int hours)
         {
-            if (!IsOn)
-            {
-                return 0.0;
-            }
-
-            return PowerConsumption * hourse / 1000.0;
+            if (!IsOn) { return 0; }
+            return PowerConsumption * hours / 1000;
         }
     }
 }

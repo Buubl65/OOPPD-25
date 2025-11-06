@@ -1,11 +1,11 @@
-﻿using System;
-
-namespace SmartHomeSystem
+﻿namespace SmartHomeSystem
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             SmartHomeController controller = new SmartHomeController();
             Light light = new Light("Лампа у вітальні");
             AirConditioner conditioner = new AirConditioner("Кондеціонер у спальні");

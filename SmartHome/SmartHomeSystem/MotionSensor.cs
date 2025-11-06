@@ -1,25 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
     public class MotionSensor : Device
     {
-
         public MotionSensor(string name) : base(name) { }
-        public string DeviceName => Name;
 
         public override void TurnOn()
         {
-            IsOn = true;
-            Console.WriteLine($"{Name} активовано");
+            Console.WriteLine($"{Name} активовано.");
         }
 
         public override void TurnOff()
         {
-            IsOn = false;
-            Console.WriteLine($"{Name} деактивовано");
+            Console.WriteLine($"{Name} деактивовано.");
         }
+
     }
 }

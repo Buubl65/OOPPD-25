@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
     public interface IEnergyConsumer
     {
         public string DeviceName { get; }
-
         public int PowerConsumption { get; }
-
-        public double GetEnergyUsage(int hourse);
+        public double GetEnergyUsage(int hours);
     }
 }

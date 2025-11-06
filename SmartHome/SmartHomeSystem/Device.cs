@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Channels;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
@@ -8,19 +11,19 @@ namespace SmartHomeSystem
     {
         public string Name { get; set; }
         public bool IsOn { get; protected set; }
-        
+
         public Device(string name)
         {
             Name = name;
             IsOn = false;
         }
+
         public abstract void TurnOn();
         public abstract void TurnOff();
-        
+
         public void PrintStatus()
         {
-            if (IsOn) { Console.WriteLine($"{Name}: увімкнено"); }
-            else { Console.WriteLine($"{Name}: вимкнено"); }
+            Console.WriteLine(IsOn ? $"{Name}: увімкнено" : $"{Name}: вимкнено");
         }
     }
 }

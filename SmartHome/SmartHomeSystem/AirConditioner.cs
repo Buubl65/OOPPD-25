@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SmartHomeSystem
 {
-    class AirConditioner : Device, IEnergyConsumer
+    public class AirConditioner : Device, IEnergyConsumer
     {
-        public const int Power = 2000;
+        public int Power = 2000;
 
         public AirConditioner(string name) : base(name) { }
 
@@ -15,24 +17,19 @@ namespace SmartHomeSystem
 
         public override void TurnOn()
         {
-            IsOn = true;
-            Console.WriteLine($"{Name} почав охолоджувати");
+            Console.WriteLine($"{Name} почав охолодження.");
         }
 
         public override void TurnOff()
         {
-            IsOn = false;
-            Console.WriteLine($"{Name} зупинено");
+            Console.WriteLine($"{Name} зупинено.");
         }
 
-        public double GetEnergyUsage(int hourse)
+        public double GetEnergyUsage(int hours)
         {
-            if (!IsOn)
-            {
-                return 0.0;
-            }
-
-            return PowerConsumption * hourse / 1000.0;
+            if (!IsOn) { return 0; }
+            return PowerConsumption * hours / 1000;
         }
+
     }
 }
