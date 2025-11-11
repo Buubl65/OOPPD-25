@@ -8,28 +8,25 @@ namespace SmartHomeSystem
 {
     public class AirConditioner : Device, IEnergyConsumer
     {
-        public int Power = 2000;
-
-        public AirConditioner(string name) : base(name) { }
-
+        public int PowerConsumption => 2000;
         public string DeviceName => Name;
-        public int PowerConsumption => Power;
 
         public override void TurnOn()
         {
             Console.WriteLine($"{Name} почав охолодження.");
+            IsOn = true;   
         }
 
         public override void TurnOff()
         {
             Console.WriteLine($"{Name} зупинено.");
+            IsOn = false;
         }
 
         public double GetEnergyUsage(int hours)
         {
-            if (!IsOn) { return 0; }
-            return PowerConsumption * hours / 1000;
+            if (!IsOn) return 0;
+            return PowerConsumption * hours / 1000.0;
         }
-
     }
 }

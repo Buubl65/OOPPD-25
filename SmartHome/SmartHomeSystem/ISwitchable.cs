@@ -10,6 +10,6 @@ namespace SmartHomeSystem
     {
         public void TurnOn();
         public void TurnOff();
-        bool IsOn { get; }
+        public bool IsOn { get; }
     }
 }

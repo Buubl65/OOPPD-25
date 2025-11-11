@@ -8,12 +8,12 @@ namespace SmartHomeSystem
 {
     public class SmartHomeController
     {
-        List<ISwitchable> switchables = new List<ISwitchable>();
+        List<ISwitchable> switchable = new List<ISwitchable>();
         List<IEnergyConsumer> energyConsumer = new List<IEnergyConsumer>();
 
         public void AddDevice(ISwitchable device)
         {
-            switchables.Add(device);
+            switchable.Add(device);
         }
 
         public void AddEnergyDevice(IEnergyConsumer device)
@@ -23,7 +23,7 @@ namespace SmartHomeSystem
 
         public void TurnAllOn()
         {
-            foreach(var device  in switchables)
+            foreach( var device  in switchable)
             {
                 device.TurnOn();
             }
@@ -31,7 +31,7 @@ namespace SmartHomeSystem
 
         public void TurnAllOff()
         {
-            foreach(var device in switchables)
+            foreach ( var device in switchable)
             {
                 device.TurnOff();
             }
@@ -43,15 +43,14 @@ namespace SmartHomeSystem
 
             double TotalEnergy = 0;
 
-            foreach (var device in energyConsumer)
+            foreach( var device in energyConsumer)
             {
                 double energy = device.GetEnergyUsage(hours);
                 TotalEnergy += energy;
-
                 Console.WriteLine($"{device.DeviceName}: {energy:F2} кВт·год (потужність: {device.PowerConsumption} Вт)");
             }
-            Console.WriteLine($"Загальне споживання: {TotalEnergy:F2} кВт·год");
 
+            Console.WriteLine($"Загальне споживання: {TotalEnergy:F2} кВт·год");
             Console.WriteLine($"Вартість (~4 грн/кВт·год): {TotalEnergy * 4:F2} грн");
         }
     }
