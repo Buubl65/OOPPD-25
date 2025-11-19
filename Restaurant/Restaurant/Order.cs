@@ -8,7 +8,7 @@ namespace Restaurant
 {
     public class Order
     {
-        private int _orderId = 100;
+        private static int _orderId = 100;
         private List<MenyItem> _orderItems;
 
         public int Id { get; }

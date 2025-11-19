@@ -30,14 +30,10 @@ namespace Restaurant
             return _items.Remove(item);
         }
 
-        public void PrintAllMenu()
+        public MenyItem FindById(int id)
         {
-            foreach(var item in _items)
-            {
-                item.GetDisplayText();
-            }
+            return _items.FirstOrDefault(i => i.Id == id);
         }
-
 
         public List<MenyItem> FindByCategory(Category category)
         {

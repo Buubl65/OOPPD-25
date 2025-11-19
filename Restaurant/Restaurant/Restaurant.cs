@@ -36,7 +36,7 @@ namespace Restaurant
 
             foreach (var order in _orders)
             {
-                result += order.ToString() + "\n";
+                result += $"ID: {order.Id} | Статус: {order.Status}\n";
             }
 
             return result;
