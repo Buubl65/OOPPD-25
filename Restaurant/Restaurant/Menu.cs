@@ -35,9 +35,19 @@ namespace Restaurant
             return _items.FirstOrDefault(i => i.Id == id);
         }
 
-        public List<MenyItem> FindByCategory(Category category)
+        public string FindByCategory(Category category)
         {
-            return _items.Where(i => i.Category == category).ToList();
+            var items = _items
+                .Where(i => i.Category == category)
+                .Select(i => $"{i.Id}. {i.Name} - {i.Price} грн")
+                .ToList();
+
+            if (items.Count == 0)
+            {
+                return "Немає страв у цій категорії.";
+            }
+
+            return string.Join("\n", items);
         }
 
         public string GetAll()

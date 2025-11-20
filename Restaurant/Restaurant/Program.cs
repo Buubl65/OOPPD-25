@@ -65,6 +65,9 @@ namespace Restaurant
             Console.WriteLine("Активні Замовлення:");
             Console.WriteLine(restaurant.GetActiveOrders());
             Console.WriteLine("----------------------------");
+
+            // Перевірка пошуку за категорією
+            Console.WriteLine(restaurant.Menu.FindByCategory(Category.Drink));
         }
     }
 }
